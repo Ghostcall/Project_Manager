@@ -1,6 +1,5 @@
 .header {
   width: 100%;
-  padding: auto .8px;
   background-color: #f1eaeb;
   display: flex;
   justify-content: space-around;
@@ -24,9 +23,12 @@
 }
 
 .logo span {
-  color: #6b0f1a;
+  background: #6b0f1a;
+  color: #e4d0c8;
   font-weight: 700;
-  font-size: 45px;
+  padding: .5rem;
+  font-size: 22px;
+  border-radius: 50%;
 }
 
 .navbar {

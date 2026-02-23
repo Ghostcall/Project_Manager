@@ -15,7 +15,7 @@ const Header = () => {
         <div className="logo">
               <li>
                 <Link to="home" smooth={true} duration={500} onClick={closeMenu}>
-                  <h3><span>L</span>ydia.</h3>
+                  <h3><span>LW</span>Lydia.</h3>
                 </Link>
               </li> 
         </div>

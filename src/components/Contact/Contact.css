@@ -21,11 +21,11 @@
 .contact-section {
     display: flex;
     justify-content: space-around;
-    padding: 2rem 1rem;
+    padding: 2rem 3rem;
     text-align: left;
-    background: linear-gradient(rgba(27, 122, 27, 0.5), #6b0f1a);
+    background: linear-gradient(rgba(27, 122, 27, 0.5), #6b0f1a), url(/src/assets/Her0879.jpg.jpeg);
     background-size: cover;
-    background-position: center 25%;
+    background-position: center 5%;
     background-repeat: no-repeat;
 }
 
@@ -34,9 +34,8 @@
     flex-direction: column;
     justify-content: space-between;
     width: 40%;
+    margin: .5rem auto;
     height: fit-content;
-    /* gap: 1rem; */
-    align-items: center;
 }
 .contact-up {
     display: flex;
@@ -90,21 +89,22 @@
 }
 .contact-down-up{
     display: flex;
-    align-items: space-between;
-    width: 100%;
-    gap: 2rem;
+    justify-content: space-between;
+    /* width: 80%; */
+    gap: 1.5rem;
 }
 .comtact-mail{
     display: flex;
-    flex-direction: column;
+    margin: auto 0;
 }
 .contact-mail p{
+    width: 100%;
     color:#e4d0c8;
-    margin:.4rem 0
+    margin:auto;
 }
 .contact-add p{
     color:#e4d0c8;
-    margin:.4rem 0
+    margin: auto;
 
 }
 .contact-down-social{
@@ -114,9 +114,44 @@
     margin-top: .5rem;
     background: none;
 }
+.last-contact-info{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.last-contact-info-1 a{
+    display: flex;
+    align-items: center;
+    background: #e4d0c8;
+    color: #5a0f2d;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+.last-contact-info-1 a:hover{
+    background: linear-gradient(rgba(236, 134, 94, 0.586), #6b0f1a);
+    color: #e4d0c8;
+    transform: translateY(5px);
+}
+.last-contact-info-2 a{
+    display: flex;
+    align-items: center;
+    background: #e4d0c8;
+    color: #5a0f2d;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+.last-contact-info-2 a:hover{
+    background: linear-gradient( #6b0f1a, rgba(25, 86, 2, 0.586));
+    color: white;
+    transform: translateY(5px);
+}
 .contact-right{
     display: flex;
-    width: 40%;
+    width: 50%;
     /* background: #000; */
 }
 .contact-form{
@@ -136,14 +171,15 @@
     text-transform: capitalize;
 }
 .contact-form input{
-    height: 7vh;
+    height: 10vh;
+    /* width: 100%; */
     padding: .5rem;
     border-radius: 5px;
     border: none;
     outline: none;
 }
 .contact-form textarea{
-    height: 15vh;
+    height: 28vh;
     padding: .5rem;
     border-radius: 5px;
     border: none;
@@ -151,7 +187,7 @@
     resize: none;
 }
 .contact-form button{
-    margin: auto;
+    margin: 0 auto;
     width: fit-content;
     padding: .5rem 1rem;
     background: #e4d0c8;
@@ -162,12 +198,18 @@
     cursor: pointer;
     transition: all .5s ease;
 }
+.contact-form button:hover{
+    background: linear-gradient(rgba(236, 134, 94, 0.586), #6b0f1a);
+    color: white;
+    /* transform: translateY(5px); */
+}
 
 
 @media screen and (max-width: 768px){
     .contact-section{
         flex-direction: column;
         gap: 2rem;
+        padding: 0rem 1.5rem;
     }
     .contact-left, .contact-right{
         width: 100%;
@@ -179,12 +221,37 @@
         padding: 0rem .1rem;
     }
     .contact-down-up {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    width: 100%;
-    gap: .5rem;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: .5rem;
+    }
+    .contact-up p{
+        color: #e4d0c8;
+        font-weight: 600;
+    }
+    .contact-up h5{
+        color: #e4d0c8;
+        font-size: 1.15rem;
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 1rem auto;
+    }
+    .contact-down-social {
+        margin: 1rem auto;
+        gap: 1rem;
+    }
+    .last-contact-info{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        /* margin: .5rem auto; */
+
+    }
+    .contact-form button{
+        margin: 1rem auto;
+    }
 }
 
 

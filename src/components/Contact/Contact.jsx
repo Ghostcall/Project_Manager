@@ -34,7 +34,7 @@ const Contact = () => {
                 <div className="contact-down">
                     <div className="contact-down-up">
                         <div className="contact-mail">
-                            <p>📧 lydiawakonyu@gmail.com</p>
+                            {/* <p>📧 lydiawakonyu@gmail.com</p> */}
                             <p>📱 +254728710699</p>
                         </div>
                         
@@ -46,12 +46,25 @@ const Contact = () => {
 
                     <div className="contact-down-social">
                         <a href="https://www.linkedin.com/in/lydia-wakonyu-9b1a4b1b3/" target="_blank" rel="noopener noreferrer">
-                            <FaLinkedin size={30} color='#0077B5' className='linkedin' /> </a>
+                            <FaLinkedin size={25} color='#0077B5' className='linkedin' /> </a>
                         <a href="https://www.instagram.com/lydiawakonyu/" target="_blank" rel="noopener noreferrer">
-                        <FaInstagram size={30} color='#E1306C' fontWeight={700} className='instagram' /></a>
+                        <FaInstagram size={25} color='#E1306C' fontWeight={700} className='instagram' /></a>
                         <a href="https://wa.me/254728710699" target="_blank" rel="noopener noreferrer">
-                        <FaWhatsapp size={30} color='#25D366' className='whatsapp' /></a>   
+                        <FaWhatsapp size={25} color='#25D366' className='whatsapp' /></a>   
                     </div>         
+                </div>
+
+                <div className="last-contact-info">
+
+                    <div className="last-contact-info-1">
+                        <a href='/public/Lydia WW Resume.pdf' target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px" }}> Download my cv <AiOutlineDownload size={25} /> </a>
+                    </div>
+
+                    <div className="last-contact-info-2">
+                        
+                        <a href="mailto:lydiawakonyu@gmail.com?subject=Inquiry from Product Management&body=Hello Stella," target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px" }}> Send me an email <AiOutlineMail size={25} /> </a>
+                    </div>
+
                 </div>
             </div>
 
@@ -69,7 +82,7 @@ const Contact = () => {
                         <= maxChars &&  setMessage(e.target.value)}                    
                     required
                     />   
-                    <p style={{ color: message.length > maxChars ? "red" : "black", fontSize: "16px" }} >
+                    <p style={{ color: message.length > maxChars ? "red" : "#e4d0c8", fontSize: "16px", fontWeight: 700 }} >
                         {message.length}/{maxChars} characters
                     </p>              
                     <button>Send Message</button>
