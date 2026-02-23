@@ -1,16 +1,55 @@
-# React + Vite
+A modern, responsive portfolio website built with React.js (Vite) to showcase Lydia Wakonyu’s leadership in ICT, technology innovation, and regional digital talent development across Sub-Saharan Africa.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+_**This portfolio highlights her expertise in:**_
 
-Currently, two official plugins are available:
+ICT Project Leadership
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Huawei ICT Competition Management
 
-## React Compiler
+AI & Emerging Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Cross-border Technology Programs
 
-## Expanding the ESLint configuration
+Digital Innovation & Talent Development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+_**🚀 Tech Stack**_
+React.js
+Vite
+CSS3 (Custom Styling + Animations)
+React Icons
+Responsive Grid Layout
+
+
+_**✨ Features**_
+
+Modern Hero section with typewriter animation
+
+About section with themed wine & dark green styling
+
+Services section with scroll-based animations
+
+Skills section showcasing ICT & leadership competencies
+
+Contact form integration
+
+Fully responsive design (Desktop + Mobile optimized)
+
+
+_**📂 Project Structure**_
+src/
+ ├── components/
+ │    ├── Hero/
+ │    ├── About/
+ │    ├── Services/
+ │    ├── Skills/
+ │    └── Contact/
+ ├── assets/
+ └── App.jsx
+
+
+_**🎯 Purpose**_
+This project was built to present Lydia Wakonyu’s professional journey as a Regional ICT Competition Project Lead at Huawei Technologies, emphasizing leadership in technology ecosystems, AI innovation, cloud computing, and digital transformation initiatives across Africa.
+
+**_🤝 Contact_**
+For collaboration or professional inquiries, please reach out via the contact section on the portfolio.
