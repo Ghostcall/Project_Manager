@@ -221,7 +221,7 @@
         height: 300px;
         border-radius: 50%;
         object-fit: cover;
-        /* margin: 1.5rem auto; */
+        margin: 1.5rem auto;
         object-position: top;
         transition:all .5s ease;
     }
