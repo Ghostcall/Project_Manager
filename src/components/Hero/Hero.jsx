@@ -60,13 +60,13 @@ const Hero = () => {
                 <div className="social-icons">
             
                     <a href="https://www.linkedin.com/in/lydia-waruguru?trk=blended-typeahead" target="_blank" rel="noreferrer">
-                        <FaLinkedin  size={25} color='#0077B5'/>
+                        <FaLinkedin  size={30} color='#0077B5'/>
                     </a>
                     <a href="https://x.com/lydia_wakonyu" target="_blank" rel="noreferrer">
-                        <FaTwitter size={25} color='#1DA1F2'/>
+                        <FaTwitter size={30} color='#1DA1F2'/>
                     </a>
                     <a href="https://www.instagram.com/wakonyu__" target="_blank" rel="noreferrer">
-                        <FaInstagram size={25} color='#E1306C'/>
+                        <FaInstagram size={30} color='#E1306C'/>
                     </a> 
 
                 </div>
