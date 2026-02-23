@@ -10,11 +10,11 @@ const Header = () => {
 
   return (
 
-    <div className="header">
+    <div className="header" id='header'>
         
         <div className="logo">
               <li>
-                <Link to="home" smooth={true} duration={500} onClick={closeMenu}>
+                <Link to="#home" smooth={true} duration={500} onClick={closeMenu}>
                   <h3><span>LW</span>Lydia.</h3>
                 </Link>
               </li> 
@@ -25,7 +25,7 @@ const Header = () => {
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#certificates">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>

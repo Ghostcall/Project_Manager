@@ -10,11 +10,16 @@
     animation: side 5s ease;
     animation-delay: 4s;
 }
+#about {
+  scroll-margin-top: 40px;
+}
 .about{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    scroll-margin-top: 70px;
+
 }
 .about-description{
     display: flex;

@@ -9,6 +9,9 @@
     background-position: center 25%;
     background-repeat: no-repeat;
 } 
+#skills{
+    scroll-margin-top: 60px;
+}
 .skills-title{
     color: #e4d0c8;
     background: #6b0f1a;

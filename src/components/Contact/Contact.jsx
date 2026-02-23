@@ -13,7 +13,7 @@ const Contact = () => {
 
 
   return (
-   <div className='contact'>
+   <div className='contact' id='contact'>
          <h3 className="contact-title">Let's Connect.</h3>
 
          <div className="contact-section">

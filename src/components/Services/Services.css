@@ -10,6 +10,9 @@
     animation: side 5s ease;
     animation-delay: 4s;
 }
+#services{
+    scroll-margin-top: 30px;
+}
 .service{
     display: flex;
     flex-direction: column;

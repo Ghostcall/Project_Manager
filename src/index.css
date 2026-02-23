@@ -13,3 +13,6 @@ html{
 body{
   background: #e4d0c8;
 }
+section {
+  scroll-margin-top: 10px;
+}

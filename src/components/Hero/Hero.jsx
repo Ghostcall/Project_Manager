@@ -7,7 +7,7 @@ import { Typewriter } from "react-simple-typewriter";
 const Hero = () => {
   return (
 
-    <div className='hero'>
+    <div className='hero' id='hero'>
 
         <div className="hero_info">
 

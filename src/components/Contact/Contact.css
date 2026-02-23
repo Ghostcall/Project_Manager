@@ -7,6 +7,10 @@
     width: 100%;
     
 }
+#contact{
+    scroll-margin-top: 60px;
+
+}
 .contact-title{
     margin-bottom: 2rem;
     color: #e4d0c8;
