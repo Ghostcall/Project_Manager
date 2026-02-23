@@ -23,9 +23,9 @@
     justify-content: space-around;
     padding: 2rem 3rem;
     text-align: left;
-    background: linear-gradient(rgba(27, 122, 27, 0.5), #6b0f1a), url(/src/assets/Her0879.jpg.jpeg);
+    background: linear-gradient(rgba(27, 122, 27, 0.5), #6b0f1a), url(/src/assets/blue.jpeg);
     background-size: cover;
-    background-position: center 5%;
+    background-position: center 45%;
     background-repeat: no-repeat;
 }
 
@@ -210,6 +210,10 @@
         flex-direction: column;
         gap: 2rem;
         padding: 0rem 1.5rem;
+        background: linear-gradient(rgba(27, 122, 27, 0.5), #6b0f1a), url(/src/assets/blue2\ \(2\).jpeg);
+        background-size: cover;
+        background-position: center 45%;
+        background-repeat: no-repeat;    
     }
     .contact-left, .contact-right{
         width: 100%;
