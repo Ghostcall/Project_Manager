@@ -1,0 +1,115 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 8%;
+    background: linear-gradient(rgba(236, 134, 94, 0.586), #6b0f1a), url('/src/assets/Her0875.jpg.jpeg');
+    background-size: cover;
+    background-position: center 25%;
+    background-repeat: no-repeat;
+} 
+.skills-title{
+    color: #e4d0c8;
+    background: #6b0f1a;
+    font-size: 1.5rem;
+    margin-top: -5rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    animation: side 5s ease;
+    animation-delay: 8s;
+} 
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1.5rem;
+    gap: 30px;
+    width: 80%;
+}
+
+.skill-container1, .skill-container2, .skill-container3, .skill-container4, .skill-container5 {
+    background: #602d33;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(21, 21, 21, 0.05);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.skill-container1:hover,
+.skill-container2:hover,
+.skill-container3:hover,
+.skill-container4:hover,
+.skill-container5:hover {
+    transform: translateY(-22px);
+    background: #e4d0c8;
+}
+.skill-container1:hover .skill-title,
+.skill-container2:hover .skill-title,
+.skill-container3:hover .skill-title,
+.skill-container4:hover .skill-title,
+.skill-container5:hover .skill-title {
+    background: #5a0f2d;
+    color: #e4d0c8;
+}
+.skill-container1:hover p,
+.skill-container2:hover p,
+.skill-container3:hover p,
+.skill-container4:hover p,
+.skill-container5:hover p {
+   background: linear-gradient(120deg, darkgreen, black);
+   font-weight: 800;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #5a0f2d;
+    background: #e4d0c8;
+    border-radius: 5px;
+    padding: 3px;
+    margin-bottom: 15px;
+}
+
+.skill-list p {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* For Tablet */
+@media (max-width: 992px) {
+    .skill-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .skills {
+        padding: 80px 6%;
+    }
+
+    .skill-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .skills-title {
+        font-size: 20px;
+        width: fit-content;
+    }
+
+    .skill-container1,
+    .skill-container2,
+    .skill-container3,
+    .skill-container4,
+    .skill-container5 {
+        padding: 25px;
+    }
+}

@@ -1,0 +1,265 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(236, 134, 94, 0.586), #6b0f1a), url('/src/assets/Her0874.jpg.jpeg');
+    background-size: cover;
+    background-position: center 10%;
+    background-repeat: no-repeat;
+}
+.hero_info{
+    display: flex;
+    padding: 1rem .05rem;
+    justify-content: center;
+    align-items: center;
+    color: rgb(56, 56, 57);
+    margin-top: 5%;
+    text-align: center;
+    z-index: 1;
+}
+.typewriter-text{
+    font-size: 2rem;
+    font-weight: 900;
+    color: darkgreen;
+}
+.hello{
+    color: darkgreen;
+    font-size: 3.2rem;
+}
+.contact-me{
+    color: #fff;
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+    width: fit-content;
+    font-weight: bold;
+    animation: move 1.5s ease;
+}
+.contact-me span{
+    color: darkgreen;
+    font-size: 2.4rem;
+    font-weight: bolder;
+}
+.contact-me hr{
+    border-bottom: 3px solid darkgreen;
+    width: 50%;
+    margin: -.1rem 0;
+}
+
+.Typewriter__cursor,
+.cursor {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.hero_info {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(56, 56, 57);
+    text-align: left;
+    z-index: 1;
+}
+
+.left-col {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left-col h5{
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    color: #fff;
+    width: fit-content;
+    text-transform: capitalize;
+    animation: move 1.5s ease;
+}
+.left-col h5 span{
+    color: darkgreen;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.left-col h5 hr{
+    border-bottom: 3px solid darkgreen;
+    width: 70%;
+    margin: .5rem 0;
+}
+.program, .product{
+    line-height: 1.7;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    animation: side 2.5s ease;
+    animation-delay: 1.5s;
+}
+.hire{
+    display: flex;
+    margin: -0.5rem 0;
+}
+.hire a{
+    width: fit-content;
+    background-color: darkgreen;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .6s ease;
+    animation: side 1.5s ease;
+    animation-delay: 1s;
+}
+.hire a:hover{
+    background-color: #4d0c14;
+    color:  #e4d0c8;
+    transform: scale(1.15);
+}
+.right-col {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.right-col img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-position: top;
+    object-fit: cover;
+    animation: side 2s ease;
+    animation-delay: 1;
+    cursor: pointer;
+    margin-top: auto 0;
+    transition: all .5s ease;
+}
+.right-col img:hover{
+    transform: translateX(50px);
+}
+.social-icons{
+    display: flex;
+    margin: .5rem 0;
+}
+.social-icons a{
+    font-weight: bold;
+    font-size: 2rem;
+    background: none;
+    margin: 3px;
+    color: #e4d0c8;
+    transition: .8s;
+}
+.social-icons a:hover{
+    transform: scale(1.3);
+}
+@keyframes move {
+    from {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes side {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: .2rem 0;
+        min-height: 0vh;
+        background: linear-gradient(rgba(221, 97, 81, 0.695), #6b0f1a), url('/src/assets/Her0876.jpg.jpeg');
+        background-size: cover;
+        background-position: center calc(45% + 45px); /* shifted down */
+        background-repeat: no-repeat;
+        
+    }    
+    .react-typewriter-text {
+        font-size: 2.5rem;
+    }
+    
+    .hero_info {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 2rem 1rem;
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .contact-me span {
+        color: #e4d0c8;
+        font-size: 2.4rem;
+        font-weight: bolder;
+    }
+    
+    .left-col, .right-col {
+        width: 100%;
+        text-align: left;
+        margin: 0 auto;    
+    }
+    
+    .right-col img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        /* margin: 1.5rem auto; */
+        object-position: top;
+        transition:all .5s ease;
+    }
+    .right-col img:hover{
+        transform: translateY(30px);
+        
+    }
+    .hello{
+        margin-top: 1rem;
+        color: #e4d0c8;
+        font-size: 3.5rem;
+        font-weight: 800;
+    }
+    .typewriter-text{
+        color: #e4d0c8;
+    }
+    .product, .program{
+        line-height: 1.7;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 500;
+        animation: side 2.5s ease;
+        animation-delay: 1.5s;
+        animation-timeline: view();
+        animation-range: entry 0% cover 20%;
+    }
+    .hire a{
+        background-color: #4d0c14;
+        color: #e4d0c8;
+    }
+    .hire a:hover{
+        background-color: #6b0f1a;
+        color:  #e4d0c8;
+        transform: scale(1.15);
+    }
+    .left-col h5 span {
+    color: #e4d0c8;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+}
