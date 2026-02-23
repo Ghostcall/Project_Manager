@@ -35,9 +35,9 @@
     justify-content: space-between;
     min-height: 250px;
     cursor: pointer;
-    animation: side 3s ease-in-out;
+    animation: side 0.1s ease-in;
     animation-timeline: view(); 
-    animation-range: entry 0% cover 30%; 
+    animation-range: entry 0% cover 60%; 
     transition: all .5s ease-in-out;
     margin-bottom: 1rem;
 }
