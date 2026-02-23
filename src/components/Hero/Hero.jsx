@@ -9,10 +9,6 @@ const Hero = () => {
 
     <div className='hero'>
 
-        {/* <video autoPlay loop muted className="video-bg">
-            <source src={videoBg} type="video/mp4" />
-        </video> */}
-
         <div className="hero_info">
 
             <div className="left-col">
@@ -64,13 +60,13 @@ const Hero = () => {
                 <div className="social-icons">
             
                     <a href="https://www.linkedin.com/in/lydia-waruguru?trk=blended-typeahead" target="_blank" rel="noreferrer">
-                        <FaLinkedin />
+                        <FaLinkedin  size={25} color='#0077B5'/>
                     </a>
                     <a href="https://x.com/lydia_wakonyu" target="_blank" rel="noreferrer">
-                        <FaTwitter />
+                        <FaTwitter size={25} color='#1DA1F2'/>
                     </a>
                     <a href="https://www.instagram.com/wakonyu__" target="_blank" rel="noreferrer">
-                        <FaInstagram />
+                        <FaInstagram size={25} color='#E1306C'/>
                     </a> 
 
                 </div>
