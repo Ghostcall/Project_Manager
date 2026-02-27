@@ -9,6 +9,7 @@ import Skills from './components/Skills/Skills'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
+import Certificate from './components/Certificate/Certificate'
 const App = () => {
   return (
 
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/#about" element={<About />} />
             <Route path="/#services" element={<Services />} />
             <Route path="/#skills" element={<Skills />} />
+            <Route path="/#certificate" element={<Certificate />} />
             <Route path="/#contact" element={<Contact />} />
             <Route path="/#footer" element={<Footer />} />
           </Routes>
