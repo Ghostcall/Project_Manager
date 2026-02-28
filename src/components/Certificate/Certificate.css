@@ -45,6 +45,7 @@
     margin-right: 1rem;
 }
 .certificate-up-description h3{
+    margin: auto;
     font-size: 16px;
     font-weight: 700;
 }
