@@ -137,8 +137,8 @@
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
     /* Starting position for "side" animation */
-    transform: translateX(-50px); 
-    opacity: 0;
+    transform: translateY(-50px); 
+    /* opacity: 0; */
 
     /* Smooth transition */
     transition: transform 2.5s ease, opacity 2.5s ease;
