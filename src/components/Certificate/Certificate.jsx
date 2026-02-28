@@ -6,6 +6,23 @@ import digital from '../../assets/Screenshot 2026-02-28 020013.png'
 import intelli from '../../assets/hsca-intelli.png'
 import ip from '../../assets/ip.png'
 import storage from '../../assets/storage.png'
+
+const certificateSections = document.querySelectorAll('.certificate-section');
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('animate');
+      }
+    });
+  },
+  {
+    threshold: 0.3 // triggers when 30% of the section is visible
+  }
+);
+
+certificateSections.forEach(section => observer.observe(section));
 const Certificate = () => {
   return (
     <div className='certificate'>
