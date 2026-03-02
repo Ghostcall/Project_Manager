@@ -62,7 +62,7 @@ const Contact = () => {
 
                     <div className="last-contact-info-2">
                         
-                        <a href="mailto:lydiawakonyu@gmail.com?subject=Inquiry from Product Management&body=Hello Stella," target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px" }}> Send me an email <AiOutlineMail size={25} /> </a>
+                        <a href="mailto:lydiawakonyu@gmail.com?subject=Inquiry from ICT Project Management&body=Hello Lydia," target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px" }}> Send me an email <AiOutlineMail size={25} /> </a>
                     </div>
 
                 </div>
