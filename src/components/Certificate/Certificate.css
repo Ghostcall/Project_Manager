@@ -81,15 +81,17 @@
     text-align: center;
     font-size: 14px;
     border-radius: 3px;
-    background: #e4d0c8;
-    color: #5a0f2d;
+    background: darkgreen;
+    color: white;
     font-weight: 700;
     transition: all .5s ease;
     text-decoration: none;
 
 }
 .certificate-down-description a:hover{
-    background: linear-gradient(rgba(236, 134, 94, 0.586), #6b0f1a);
+    /* background: linear-gradient(rgba(236, 134, 94, 0.586), #6b0f1a); */
+    /* background: darkgreen; */
+    background:linear-gradient(rgba(27, 122, 27, 0.5), #6b0f1a);
     color: #e4d0c8;
     background-size: cover;
     background-position: center 25%;

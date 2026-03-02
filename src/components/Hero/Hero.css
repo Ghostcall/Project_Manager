@@ -23,10 +23,13 @@
 .typewriter-text{
     font-size: 2rem;
     font-weight: 900;
-    color: darkgreen;
+    /* color:  #e4d0c8; */
+    color: white;
 }
 .hello{
-    color: darkgreen;
+    /* color:  #e4d0c8; */
+    color: white;
+    font-weight: 900;
     font-size: 3.2rem;
 }
 .contact-me{
@@ -38,7 +41,7 @@
     animation: move 1.5s ease;
 }
 .contact-me span{
-    color: darkgreen;
+    color: white;
     font-size: 2.4rem;
     font-weight: bolder;
 }
@@ -83,7 +86,7 @@
     animation: move 1.5s ease;
 }
 .left-col h5 span{
-    color: darkgreen;
+    color: white;
     font-size: 2.5rem;
     font-weight: bolder;
 }
@@ -94,7 +97,7 @@
 }
 .program, .product{
     line-height: 1.7;
-    color: white;
+    color: #e4d0c8;
     font-size: 1.1rem;
     font-weight: 500;
     animation: side 2.5s ease;
@@ -120,9 +123,9 @@
     animation-delay: 1s;
 }
 .hire a:hover{
-    background-color: #4d0c14;
-    color:  #e4d0c8;
-    transform: scale(1.15);
+    /* transform: translateX(5px); */
+    background: #e4d0c8;
+    color: #6b0f1a;
 }
 .right-col {
     flex: 1;

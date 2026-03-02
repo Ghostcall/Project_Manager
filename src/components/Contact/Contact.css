@@ -136,8 +136,7 @@
 }
 .last-contact-info-1 a:hover{
     background: linear-gradient(rgba(236, 134, 94, 0.586), #6b0f1a);
-    color: #e4d0c8;
-    transform: translateY(5px);
+    color: white;
 }
 .last-contact-info-2 a{
     display: flex;
@@ -149,9 +148,9 @@
     transition: all .5s ease;
 }
 .last-contact-info-2 a:hover{
-    background: linear-gradient( #6b0f1a, rgba(25, 86, 2, 0.586));
+    background: linear-gradient(rgba(236, 134, 94, 0.586), #6b0f1a);
     color: white;
-    transform: translateY(5px);
+    transform: translateY(-3px);
 }
 .contact-right{
     display: flex;

@@ -24,25 +24,28 @@
 .about-description{
     display: flex;
     justify-content: space-between;
+    gap: 5rem;
     flex-direction: row;
     align-items: center;
     padding: 2rem 0;
+    margin: auto 1.5rem;
     width: 80%;
 }
 .about-img{
     border-radius: 50%;
     object-fit: cover;
-    object-position: top;
+    object-position: left;
     margin: 0 2rem;
 }
 .about-img img{
-    width: 450px;
-    height: 450px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
     animation: rotateOnce 5s ease;
     animation-delay: 5s;
+    transition: all .5s ease-in-out;
 
 }
 .about-description-text1{
@@ -86,8 +89,7 @@
     animation-range: entry 0% cover 20%;
 }
 .about-img img:hover{
-    animation: move 1.5s ease;
-    transform: translateX(40px);
+    transform: translateY(-30px);
 }
 @keyframes move {
     0% {
@@ -153,12 +155,18 @@
         font-size: 20px;
     }
     .about-description{
+        display: block  ;
         flex-direction: column;
         text-align: center;
     }
+    .about-img{
+        justify-content: left;
+    }
     .about-img img{
-        width: 300px;
-        height: 300px;
+        justify-content: left;
+        width: 200px;
+        height: 200px;
+        /* display: none; */
     }
     .about-descritpion-texts{
         margin-top: 1rem;
