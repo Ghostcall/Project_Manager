@@ -6,7 +6,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import emailjs from '@emailjs/browser'
 import { FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { useState } from 'react';
-
+import resume from '../../assets/Lydia WW Resume.pdf'
 const Contact = () => {
     const maxChars = 300;
     const [message, setMessage] = useState("");
@@ -57,7 +57,7 @@ const Contact = () => {
                 <div className="last-contact-info">
 
                     <div className="last-contact-info-1">
-                        <a href='/public/Lydia WW Resume.pdf' target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px" }}> Download my cv <AiOutlineDownload size={25} /> </a>
+                        <a href={resume} target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px" }}> Download my cv <AiOutlineDownload size={25} /> </a>
                     </div>
 
                     <div className="last-contact-info-2">
