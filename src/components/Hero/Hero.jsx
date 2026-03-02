@@ -7,6 +7,10 @@ import { Typewriter } from "react-simple-typewriter";
 const Hero = () => {
 
     const email = "lydiawakonyu@gmail.com";
+    const subject = "Hiring Inquiry";
+    const body = "Hello Lydia,";
+
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
 
   return (
 
@@ -54,10 +58,7 @@ const Hero = () => {
                     groups across Nigeria. */}
                 </p>
                
-               <div className="hire">
-                <a   href={`mailto:${email}`} 
-                    target="_blank" 
-                    rel="noopener noreferrer" >Hire Me!</a>
+               <div className="hire"><a href={gmailLink} target="_blank" rel="noopener noreferrer">Hire Me!</a>
                </div>
 
                 <p className='contact-me'><span>C</span>ontact Me Now! <hr /></p>
