@@ -5,6 +5,9 @@ import oma from '../../assets/OLE_7534.jpg.jpeg'
 import { FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa'
 import { Typewriter } from "react-simple-typewriter";
 const Hero = () => {
+
+    const email = "lydiawakonyu@gmail.com";
+
   return (
 
     <div className='hero' id='hero'>
@@ -52,7 +55,9 @@ const Hero = () => {
                 </p>
                
                <div className="hire">
-               <a href='mailto:lydiawakonyus@gmail.com' target="_blank" rel="noopener noreferrer">Hire Me!</a>
+                <a   href={`mailto:${email}`} 
+                    target="_blank" 
+                    rel="noopener noreferrer" >Hire Me!</a>
                </div>
 
                 <p className='contact-me'><span>C</span>ontact Me Now! <hr /></p>
