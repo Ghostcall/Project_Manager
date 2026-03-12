@@ -7,6 +7,7 @@ const Header = () => {
    const [menuOpen, setMenuOpen] = useState(false);
 
   const closeMenu = () => setMenuOpen(false);
+  
 
   return (
 
@@ -22,12 +23,12 @@ const Header = () => {
         <div className="navbar">
             
             <ul className={menuOpen ? "nav-links open" : "nav-links"}>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certificate">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#hero" onClick={closeMenu}>Home</a></li>
+                <li><a href="#about" onClick={closeMenu}>About</a></li>
+                <li><a href="#services" onClick={closeMenu}>Services</a></li>
+                <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
+                <li><a href="#certificate" onClick={closeMenu}>Certifications</a></li>
+                <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
             </ul>
         
         </div>
