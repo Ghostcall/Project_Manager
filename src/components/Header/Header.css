@@ -95,14 +95,14 @@
 .menu-icon {
   display: none;
   margin: auto 0;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
   color: #4d0c14;
 }
 
 @media (max-width: 900px) {
   .header {
-    padding: auto .8px;
+    justify-content: space-between;  
   }
 
    .nav-links {
@@ -147,10 +147,45 @@
   .nav-links {
     gap: 18px;
   }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 1px;
+    
+  }
+  .logo span {
+    background: #6b0f1a;
+    color: #e4d0c8;
+    font-weight: 700;
+    padding: .5rem;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+  .logo h3 {
+    font-size: 20px;
+    font-weight: 500;
+    gap: 0px;
+    margin: auto 1rem;
+}
+.logo h3 span {
+    background: #6b0f1a;
+    color: #e4d0c8;
+    font-weight: 700;
+    padding: .5rem;
+    font-size: 18px;
+    border-radius: 50%;
+  
+}
   .menu-icon {
     display: block;
     cursor: pointer;
-    margin-top: 1rem;
+    position: absolute;
+    right: 20px;
+    top: 11px;
   }
 }
 
