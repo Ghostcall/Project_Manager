@@ -15,7 +15,7 @@ import hcsastorage from '../../assets/HCSA Storage.pdf'
 
 const Certificate = () => {
   return (
-    <div className='certificate'>
+    <div className='certificates' id='certificate'>
         <h3 className="certificate-title">Certificate of Completion</h3>
 
         <div className="certificate-section">

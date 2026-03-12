@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 3rem;
-    width: 100%;
+    /* width: 100%; */
     
 }
 #contact{
@@ -160,9 +160,17 @@
 .contact-form{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
+    width: 100%;
+    margin: 0  auto;
+}
+.form-lydia{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 1.2rem;
     margin: 0 auto;
-    width: 60%;
+    width: 65%;
 }
 .contact-form h4{
     color: white;
@@ -170,18 +178,19 @@
     font-size: 1.5rem;
     font-weight: 700;
     padding: 0.5rem 1rem;
+    margin: 0 auto;
     text-align: center;
     text-transform: capitalize;
 }
-.contact-form input{
+.form-lydia input{
     height: 10vh;
-    /* width: 100%; */
+    width: 100%;
     padding: .5rem;
     border-radius: 5px;
     border: none;
     outline: none;
 }
-.contact-form textarea{
+.form-lydia textarea{
     height: 28vh;
     padding: .5rem;
     border-radius: 5px;
@@ -189,7 +198,7 @@
     outline: none;
     resize: none;
 }
-.contact-form button{
+.form-lydia button{
     margin: 0 auto;
     width: fit-content;
     padding: .5rem 1rem;
@@ -201,7 +210,7 @@
     cursor: pointer;
     transition: all .5s ease;
 }
-.contact-form button:hover{
+.form-lydia button:hover{
     background: linear-gradient(rgba(236, 134, 94, 0.586), #6b0f1a);
     color: white;
     /* transform: translateY(5px); */
@@ -209,19 +218,31 @@
 
 
 @media screen and (max-width: 768px){
-    .contact-section{
+    .contact {
+        display: flex;
         flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        margin-top: 3rem;
+        /* width: 100%; */
+    }
+    .contact-section{
+        display: block;
+        /* flex-direction: column; */
         gap: 2rem;
-        padding: 0rem 1.5rem;
-        background: linear-gradient(rgba(27, 122, 27, 0.5), #6b0f1a), url(/src/assets/blue2\ \(2\).jpeg);
-        background-size: cover;
-        background-position: center 45%;
-        background-repeat: no-repeat;    
+        padding: 1.5rem;
+        /* background: linear-gradient(rgba(27, 122, 27, 0.5), #6b0f1a), url(/src/assets/blue2\ \(2\).jpeg); */
+        /* background-size: cover;
+        background-position: center 95%;
+        background-repeat: no-repeat;     */
     }
     .contact-left, .contact-right{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
         width: 100%;
     }
-    .contact-form{
+    .form-lydia{
         width: 100%;
     }
     .contact-form h4{

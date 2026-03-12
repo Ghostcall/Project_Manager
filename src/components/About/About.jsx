@@ -25,13 +25,13 @@ const About = () => {
                     <h3>
                         From planning and monitoring large-scale cross-border ICT programs to leading students, trainers and 
                         university partners to Shenzhen, China for the Global Finals, I drive excellence in networking, 
-                        cloud computing, AI, and Big Data tracks. <br />
+                        cloud computing, AI and Big Data tracks. <br />
                     </h3>
                 </div>
                 <div className="about-description-text3">
                     <h3>
                         Through strategic collaboration with universities, 
-                        regional Huawei offices, and Ministries of Education, I have expanded participation, strengthened ICT ecosystems, 
+                        regional Huawei offices and Ministries of Education, I have expanded participation, strengthened ICT ecosystems 
                         and mentored 100+ students and faculty annually transforming technical potential into global competitiveness.
                     </h3>
                 </div>

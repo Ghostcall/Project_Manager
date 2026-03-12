@@ -1,16 +1,56 @@
-import React from 'react'
-import './Contact.css'
-import cont from '../../assets/IMG_5271.JPG.jpeg'
-import { AiOutlineDownload } from "react-icons/ai";
-import { AiOutlineMail } from "react-icons/ai";
-import emailjs from '@emailjs/browser'
-import { FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { useState } from 'react';
-import resume from '../../assets/Lydia WW Resume.pdf'
+// import React from 'react'
+// import './Contact.css'
+// import cont from '../../assets/IMG_5271.JPG.jpeg'
+// import { AiOutlineDownload } from "react-icons/ai";
+// import { AiOutlineMail } from "react-icons/ai";
+// import { FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
+// import { useRef, useState } from 'react';
+// import resume from '../../assets/Lydia WW Resume.pdf'
+// import emailjs from '@emailjs/browser'
+
+    import React, { useRef, useState } from 'react';
+    import './Contact.css';
+    import { AiOutlineDownload, AiOutlineMail } from "react-icons/ai";
+    import { FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
+    import emailjs from '@emailjs/browser';
+    import resume from '../../assets/Lydia WW Resume.pdf';
+
 const Contact = () => {
     const maxChars = 300;
     const [message, setMessage] = useState("");
+    const email = "lydiawakonyu@gmail.com";
+    const subject = "Hiring Inquiry";
+    const body = "Hello Lydia,";
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+    const [loading, setLoading] = useState(false);
+    const form = useRef();
 
+    //  function Contact() {
+    
+
+    const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .sendForm(
+        "service_xa55nz8",   // Gmail service ID
+        "template_4wdps65",  // Template ID
+        form.current,
+        "nbxqF7CIEJh7GeCfI"    // Public Key
+      )
+      .then(
+        () => {
+          alert("Message sent successfully!");
+          form.current.reset();
+          setLoading(false);
+        },
+        (error) => {
+            console.log("FULL ERROR:", error);
+            alert(error.text || "Something went wrong.");
+}
+      );
+  };
 
   return (
    <div className='contact' id='contact'>
@@ -62,7 +102,7 @@ const Contact = () => {
 
                     <div className="last-contact-info-2">
                         
-                        <a href="mailto:lydiawakonyu@gmail.com?subject=Inquiry from ICT Project Management&body=Hello Lydia," target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px" }}> Send me an email <AiOutlineMail size={25} /> </a>
+                        <a href={gmailLink} target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "8px" }}> Send me an email <AiOutlineMail size={25} /> </a>
                     </div>
 
                 </div>
@@ -71,21 +111,25 @@ const Contact = () => {
             <div className="contact-right">
                 <div className="contact-form">
                     <h4>SEND ME A MESSAGE.</h4>
-                    <input type="text" placeholder='Enter Your Name' className='name' />
-                    <input type="email" placeholder='Enter Your Email' />
-                    <textarea 
-                        name="message" 
-                        id="message"
-                        rows={20}
-                        placeholder='Enter Message'
-                        onChange={(e)=> e.target.value.length 
-                        <= maxChars &&  setMessage(e.target.value)}                    
-                    required
-                    />   
-                    <p style={{ color: message.length > maxChars ? "red" : "#e4d0c8", fontSize: "16px", fontWeight: 700 }} >
+                    <form ref={form} onSubmit={sendEmail} className='form-lydia' >
+                        <input type="text" name="from_name" placeholder='Enter Your Name' required />
+                        <input type="email" name="from_email" placeholder='Enter Your Email' required />
+                        <textarea 
+                            name="message" 
+                            id="message"
+                            rows={20}
+                            placeholder='Enter Message'
+                            onChange={(e)=> e.target.value.length 
+                            <= maxChars &&  setMessage(e.target.value)}                    
+                            required
+                        />   
+                        <p style={{ color: message.length > maxChars ? "red" : "#e4d0c8", fontSize: "16px", fontWeight: 700 }} >
                         {message.length}/{maxChars} characters
-                    </p>              
-                    <button>Send Message</button>
+                        </p>              
+                        <button type="submit" disabled={loading}>
+                             {loading ? "Sending..." : "Send Message"}
+                         </button>
+                    </form>
                 </div>
 
             </div>
@@ -99,4 +143,112 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;
+
+
+
+
+// import React, { useRef, useState } from 'react';
+// import './Contact.css';
+// import { AiOutlineDownload, AiOutlineMail } from "react-icons/ai";
+// import { FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
+// import emailjs from '@emailjs/browser';
+// import resume from '../../assets/Lydia WW Resume.pdf';
+
+// const Contact = () => {
+//   const maxChars = 300;
+//   const [message, setMessage] = useState("");
+//   const [loading, setLoading] = useState(false);
+//   const form = useRef();
+
+//   const email = "lydiawakonyu@gmail.com";
+//   const subject = "Hiring Inquiry";
+//   const body = "Hello Lydia,";
+
+//   const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+
+//   const sendEmail = (e) => {
+//     e.preventDefault();
+//     setLoading(true);
+
+//     emailjs
+//       .sendForm(
+//         "service_xa55nz8",
+//         "template_4wdps65",
+//         form.current,
+//         "nbxqF7CIEJh7GeCfI"
+//       )
+//       .then(
+//         () => {
+//           alert("Message sent successfully!");
+//           form.current.reset();
+//           setMessage("");
+//           setLoading(false);
+//         },
+//         (error) => {
+//           console.log(error);
+//           alert("Something went wrong.");
+//           setLoading(false);
+//         }
+//       );
+//   };
+
+//   return (
+//     <div className='contact' id='contact'>
+//       <h3 className="contact-title">Let's Connect.</h3>
+
+//       <div className="contact-section">
+
+//         <div className="contact-left">
+
+//           <div className="last-contact-info">
+//             <div>
+//               <a href={resume} target="_blank" rel="noopener noreferrer">
+//                 Download my CV <AiOutlineDownload size={20} />
+//               </a>
+//             </div>
+
+//             <div>
+//               <a href={gmailLink} target="_blank" rel="noopener noreferrer">
+//                 Send me an email <AiOutlineMail size={20} />
+//               </a>
+//             </div>
+//           </div>
+
+//         </div>
+
+//         <div className="contact-right">
+//           <h4>SEND ME A MESSAGE.</h4>
+
+//           <form ref={form} onSubmit={sendEmail}>
+//             <input type="text" name="from_name" placeholder="Enter Your Name" required />
+//             <input type="email" name="from_email" placeholder="Enter Your Email" required />
+
+//             <textarea
+//               name="message"
+//               rows={6}
+//               placeholder="Enter Message"
+//               value={message}
+//               onChange={(e) =>
+//                 e.target.value.length <= maxChars &&
+//                 setMessage(e.target.value)
+//               }
+//               required
+//             />
+
+//             <p>
+//               {message.length}/{maxChars} characters
+//             </p>
+
+//             <button type="submit" disabled={loading}>
+//               {loading ? "Sending..." : "Send Message"}
+//             </button>
+//           </form>
+//         </div>
+
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Contact;
