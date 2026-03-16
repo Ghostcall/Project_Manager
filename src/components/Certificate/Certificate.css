@@ -98,10 +98,8 @@
 
 }
 .certificate-down-description a:hover{
-    /* background: linear-gradient(rgba(236, 134, 94, 0.586), #6b0f1a); */
-    /* background: darkgreen; */
-    background:linear-gradient(rgba(27, 122, 27, 0.5), #6b0f1a);
-    color: #e4d0c8;
+    background: #e4d0c8;
+    color: #6b0f1a;
     background-size: cover;
     background-position: center 25%;
     background-repeat: no-repeat;

@@ -75,7 +75,7 @@ const Contact = () => {
                     <div className="contact-down-up">
                         <div className="contact-mail">
                             {/* <p>📧 lydiawakonyu@gmail.com</p> */}
-                            <p>📱 +254728710699</p>
+                            <p>📱 +13145993123</p>
                         </div>
                         
 
@@ -89,7 +89,7 @@ const Contact = () => {
                             <FaLinkedin size={25} color='#0077B5' className='linkedin' /> </a>
                         <a href="https://www.instagram.com/lydiawakonyu/" target="_blank" rel="noopener noreferrer">
                         <FaInstagram size={25} color='#E1306C' fontWeight={700} className='instagram' /></a>
-                        <a href="https://wa.me/254728710699" target="_blank" rel="noopener noreferrer">
+                        <a href="https://wa.me/13145993123" target="_blank" rel="noopener noreferrer">
                         <FaWhatsapp size={25} color='#25D366' className='whatsapp' /></a>   
                     </div>         
                 </div>

@@ -20,7 +20,7 @@
     padding: 0.5rem 1rem;
     text-align: center;
     text-transform: capitalize;
-    animation: side 5s ease;
+    animation: side 3s ease;
     animation-delay: 8s;
 } 
 
@@ -37,7 +37,7 @@
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(21, 21, 21, 0.05);
-    transition: all 0.4s ease;
+    transition: all 1s ease;
     cursor: pointer;
 }
 
@@ -46,7 +46,7 @@
 .skill-container3:hover,
 .skill-container4:hover,
 .skill-container5:hover {
-    transform: translateY(-22px);
+    transform: translateY(-15px);
     background: #e4d0c8;
 }
 .skill-container1:hover .skill-title,
